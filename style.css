@@ -1,0 +1,322 @@
+* {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Verdana;
+    font-size: 14px;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+body{
+    background: rgba(var(--d87,255,255,255),1);
+    overflow-y: scroll;
+    display: block;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    color: rgba(var(--i1d,38,38,38),1);
+    font-family:"Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    height: 100%;
+}
+
+#reactor {
+    z-index: 0;
+    height: 100%;
+    
+    font: inherit;
+    vertical-align: baseline;
+    color: rgba(var(--i1d,38,38,38),1);
+}
+
+.main {
+    background-color: rgba(var(--b3f,250,250,250),1);
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    -webkit-box-ordinal-group: 5;
+    order: 4;
+}
+
+.insta_wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-box-flex: 1;
+    -webkit-box-pack: center;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: center;
+    margin: 32px auto 0;
+    max-width: 935px;
+    padding-bottom: 32px;
+    width: 100%;
+}
+
+.insta_phone {
+    align-self: center;
+    background-image: url('./imgs/phone_insta.png');
+    background-position: 0 0;
+    background-size: 454px 618px;
+    flex-basis: 454px;
+    height: 618px;
+    margin-left: -35px;
+    margin-right: -15px;
+}
+
+.images {
+    margin: 99px 0 0 151px;
+    position: relative;
+}
+
+.slide_images {
+    height: 427px;
+    left: 0;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    visibility: visible;
+    width: 240px;
+}
+
+
+.insta_continue {
+    color: rgba(var(--i1d,38,38,38),1);
+    -webkit-box-flex: 1;
+    -webkit-box-pack: center;
+    flex-grow: 1;
+    justify-content: center;
+    margin-top: 12px;
+    max-width: 350px;
+}
+
+.box_second {
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: rgba(var(--d87,255,255,255),1);
+    border: 1px solid rgba(var(--b6a,219,219,219),1);
+    border-radius: 1px;
+    margin: 0 0 10px;
+    padding: 10px 0;
+}
+
+.logo_insta {
+    margin: 22px auto 12px;
+    background-repeat: no-repeat;
+    background-position: 0 -130px;
+    height: 51px;
+    width: 175px;
+    background-image: url('./imgs/logo_insta.png');
+    display: block;
+    overflow: hidden;
+    text-indent: 110%;
+    white-space: nowrap;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.box_photo {
+    align-items: center;
+    align-content: stretch;
+    -webkit-box-flex: 0;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    justify-content: center;
+    flex: 0 0 auto;
+}
+
+.perfil_photo {
+    border: 0;
+    color: rgba(var(--d69,0,149,246),1);
+    display: inline;
+    padding: 0;
+    position: relative;
+    appearance: none;
+    background: 0 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-weight: 600;
+    text-align: center;
+    text-transform: inherit;
+    text-overflow: ellipsis;
+    user-select: none;
+    width: auto;
+    margin: 0;
+}
+
+.login {
+    border: 1px solid transparent;
+    background-color: #0095f6;
+    border-radius: 4px;
+    color: rgba(var(--eca,255,255,255),1);
+    position: relative;
+    appearance: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    font-weight: 600;
+    padding: 5px 9px;
+    text-align: center;
+    text-transform: inherit;
+    text-overflow: ellipsis;
+    user-select: none;
+    width: auto;
+}
+
+.logout {
+    margin: 15px 0;
+    padding: 0 40px;
+    text-align: center;
+}
+
+.not_user {
+    color: rgba(var(--i1d,38,38,38),1);
+    display: inline;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.not_account {
+    border: 0;
+    color: #0095f6;
+    display: inline;
+    padding: 0;
+    position: relative;
+    background: 0 0;
+    font-weight: 600;
+    box-sizing: border-box;
+}
+
+button {
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    align-items: flex-start;
+    font: 400 13.3333px Arial;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.photo_user_perfil {
+    border-radius: 100px;
+    border: 1px solid #efefef;
+    display: block;
+    height: 100px;
+    margin: 10px auto 10px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.box_login {
+    max-width: 100%;
+    min-width: 120px;
+    margin-top: 16px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 16px;
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.continue {
+    padding-left: 16px;
+    padding-right: 16px;
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.text_login {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: rgba(var(-eca, 255, 255, 255), 1);
+    font-weight: 600;
+    margin: 0;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.box_second:last-child {
+    margin-bottom: 0;
+}
+
+.insta_login {
+    background-color: #0095f6;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#react, article, div, footer, header, main, section {
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    border: 0 solid #000;
+    box-sizing: border-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.config {
+    display: flex;
+    flex-grow: 1;
+    -webkit-box-align: stretch;
+    -webkit-box-flex: 1;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+@media (max-width: 1024) {
+    .insta_wrapper{
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px){
+    body {
+        background-color: #ffffff;
+    }
+
+    .group{
+        border: 1px solid transparent
+    }
+
+    .insta_wrapper{
+        width: 90%;
+    }
+
+    .insta_phone{
+        display: none;
+    }
+
+    .insta_continue{
+        width: 100%;
+    }
+}
